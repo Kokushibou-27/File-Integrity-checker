@@ -1,7 +1,12 @@
 import hashlib
 import os
 import json
+import time
+import hmac
 import sys
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+
 
 # Configuration
 BASELINE_FILE = "baseline.json"
